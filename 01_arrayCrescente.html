@@ -7,10 +7,14 @@
     */
 
     //ENTRADA
-
-
+const numero1 = Number(prompt("Informe o primeiro número:"));
+const numero2 = Number(prompt("Informe o segundo número:"));
+const numeros = [numero1];
     //PROCESSAMENTO
-
+if (numero1 < numero2) {
+    numeros.push(numero2)
+    alert(numeros.join(" - "));
+}
 
     //SAÍDA
 
