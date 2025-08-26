@@ -11,11 +11,18 @@
     */
 
     //ENTRADA
-
-
+const fruta1 = prompt("Isira a primeira fruta:");
+const fruta2 = prompt("Isira a segunda fruta:");
+const fruta3 = prompt("Isira a última fruta:");
+const bebida1 = prompt("Isira a primeira bebida:");
+const bebida2 = prompt("Isira a segunda bebida:");
+const bebida3 = prompt("Isira a última bebida:");
     //PROCESSAMENTO
-
-
+const frutas = [fruta1, fruta2, fruta3];
+const bebidas = [bebida1, bebida2, bebida3];
+const lista = frutas.concat(bebidas);
     //SAÍDA
-
+alert(frutas.join(", "));
+alert(bebidas.join(", "));
+alert(lista.join(", "));
 </script>
