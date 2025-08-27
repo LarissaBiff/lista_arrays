@@ -9,11 +9,17 @@
     */
 
     //ENTRADA
-
+const palavra = prompt("Digite uma palavra").trim().toLowerCase();
+const letra = prompt("Informe a  letra que quer achar na palavra:").trim().toLowerCase();
 
     //PROCESSAMENTO
+let posicao = palavra.indexOf(letra);
 
-
+if (posicao !== -1) {
+    alert(`A letra ${letra} existe na palavra ${palavra} e aparece primeiro na posição ${posicao}.`);
+} else {
+    alert(`A letra ${letra} não existe na palavra ${palavra}.`);
+}
     //SAÍDA
 
 </script>

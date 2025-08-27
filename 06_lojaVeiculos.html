@@ -19,13 +19,46 @@
 
     const carro1 = prompt(`Qual carro deseja inserir à lista?`);
     const tipo1 = prompt(`Qual o tipo do carro que você deseja inserir? (SUV/Sedan/Hatch)`);
+
     const carro2 = prompt(`Qual outro carro deseja inserir à lista?`);
     const tipo2 = prompt(`Qual o tipo do carro que você deseja inserir? (SUV/Sedan/Hatch)`);
+
     const carro3 = prompt(`Qual outro carro deseja inserir à lista?`);
     const tipo3 = prompt(`Qual o tipo do carro que você deseja inserir? (SUV/Sedan/Hatch)`);
-    //PROCESSAMENTO
 
+    //PROCESSAMENTO
+if (tipo1=="SUV") {
+    carrosSUV.push(carro1);
+} else if (tipo1=="Sedan") {
+    carrosSedan.push(carro1);
+} else if (tipo1=="Hatch") {
+    carrosHatch.push(carro1)
+} else {
+    alert("Insira os valores corretamente")
+}
+
+if (tipo2=="SUV") {
+    carrosSUV.push(carro2);
+} else if (tipo2=="Sedan") {
+    carrosSedan.push(carro2);
+} else if (tipo2=="Hatch") {
+    carrosHatch.push(carro2)
+} else {
+    alert("Insira os valores corretamente")
+}
+
+if (tipo3=="SUV") {
+    carrosSUV.push(carro3);
+} else if (tipo3=="Sedan") {
+    carrosSedan.push(carro3);
+} else if (tipo3=="Hatch") {
+    carrosHatch.push(carro3)
+} else {
+    alert("Insira os valores corretamente")
+}
 
     //SAÍDA
-
+alert(`SUV: ${carrosSUV.join(", ")}.`);
+alert(`Hatch: ${carrosHatch.join(", ")}.`);
+alert(`Sedan: ${carrosSedan.join(", ")}.`);
 </script>
